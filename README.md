@@ -23,9 +23,12 @@ This repository tracks my journey from zero to building production-ready React N
 ### Phase 4: Scrollable Lists & User Interaction (Completed)
 - **Topic 1: FlatList and Touchables**
 
-### Phase 5: Navigation (Expo Router - Stacks & Tabs) (In Progress)
-- **Topic 1: Basic Routing (Links & useRouter)** (Completed)
-- **Topic 2: Layouts (Stacks & Tabs)** (In Progress)
+### Phase 5: Navigation (Expo Router - Stacks & Tabs) (Completed)
+- **Topic 1: Basic Routing (Links & useRouter)**
+- **Topic 2: Layouts (Stacks & Tabs)**
+
+### Phase 6: State Management (Context API) (In Progress)
+- **Topic 1: Global State with Context API**
 
 ---
 *This file is automatically maintained based on `GEMINI.md` and `LEARNING_LOG.md` progress.*
