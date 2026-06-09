@@ -1,8 +1,8 @@
 import { registerRootComponent } from 'expo';
 
-import ProfileScreen from './src/app/profile';
+import * as App from './src/feed';
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
 // It also ensures that whether you load the app in Expo Go or in a native build,
 // the environment is set up appropriately
-registerRootComponent(ProfileScreen);
+registerRootComponent(App.default);

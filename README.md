@@ -20,8 +20,10 @@ This repository tracks my journey from zero to building production-ready React N
 - **Topic 1: Flexbox & Stylesheets**
 - **Topic 2: Core Components (View, Text, Image, ScrollView)**
 
-### Phase 4: Scrollable Lists & User Interaction (In Progress)
+### Phase 4: Scrollable Lists & User Interaction (Completed)
 - **Topic 1: FlatList and Touchables**
+
+### Phase 5: Navigation (React Navigation - Stacks & Tabs) (In Progress)
 
 ---
 *This file is automatically maintained based on `GEMINI.md` and `LEARNING_LOG.md` progress.*
