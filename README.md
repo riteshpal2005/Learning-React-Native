@@ -33,8 +33,11 @@ This repository tracks my journey from zero to building production-ready React N
 ### Phase 7: Fetching Data & API Integration (Completed)
 - **Topic 1: Network Requests (Fetch & useEffect)**
 
-### Phase 8: Native APIs & Libraries (In Progress)
+### Phase 8: Native APIs & Libraries (Completed)
 - **Topic 1: Using Vector Icons**
+
+### Phase 9: Building & Deploying (In Progress)
+- **Topic 1: Creating a Standalone APK (EAS Build)**
 
 ---
 *This file is automatically maintained based on `GEMINI.md` and `LEARNING_LOG.md` progress.*

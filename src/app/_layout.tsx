@@ -13,7 +13,7 @@ export default function RootLayout() {
         <ThemeContext.Provider value={theme}>
             <AppContext value={user}>
                 <Stack>
-                    <Stack.Screen name='feed' />
+                    {/* <Stack.Screen name='feed' /> */}
                 </Stack>
             </AppContext>
         </ThemeContext.Provider>

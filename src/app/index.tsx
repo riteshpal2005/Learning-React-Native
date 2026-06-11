@@ -2,14 +2,15 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Link, router } from 'expo-router';
 import { useContext } from 'react';
 import { AppContext, ThemeContext } from './_layout';
+import { FontAwesome5 } from '@expo/vector-icons';
 
 export default function FeedScreen() {
     const currentTheme = useContext(ThemeContext);
     const currentUser = useContext(AppContext);
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Welcome, {currentUser}</Text>
-            <Text style={styles.title}>The theme is {currentTheme}</Text>
+            <Text>Welcome, {currentUser}</Text>
+            <FontAwesome5 name='user' size={100} color='gray' />
         </View>
     );
 };
