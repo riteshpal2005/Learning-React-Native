@@ -21,7 +21,7 @@ export default function FeedScreen() {
                         style={{ width: 200, height: 200, alignSelf: 'center' }}
                     />
                     <Card.Actions>
-                        <Button mode='contained' onPress={() => { router.push('/feed') }}>Go to Feed</Button>
+                        <Button mode='contained' onPress={() => { router.push('/profile') }}>Go to Profile</Button>
                     </Card.Actions>
                 </Card.Content>
             </Card>
