@@ -36,8 +36,15 @@ This repository tracks my journey from zero to building production-ready React N
 ### Phase 8: Native APIs & Libraries (Completed)
 - **Topic 1: Using Vector Icons**
 
-### Phase 9: Building & Deploying (In Progress)
+### Phase 9: Building & Deploying (Completed)
 - **Topic 1: Creating a Standalone APK (EAS Build)**
+
+### Phase 10: Advanced UI/UX Component Libraries (Completed)
+- **Topic 1: Using UI Libraries (React Native Paper / Tamagui)**
+
+### Phase 11: Advanced UI/UX Animations & Gestures (In Progress)
+- **Topic 1: Lottie Animations (After Effects in RN)**
+- **Topic 2: Fluid Animations with Reanimated**
 
 ---
 *This file is automatically maintained based on `GEMINI.md` and `LEARNING_LOG.md` progress.*
