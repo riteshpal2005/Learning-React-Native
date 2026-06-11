@@ -4,6 +4,7 @@ import { Link, router } from 'expo-router';
 import { useContext } from 'react';
 import { AppContext, ThemeContext } from './_layout';
 import { FontAwesome5 } from '@expo/vector-icons';
+import LottieView from 'lottie-react-native';
 
 export default function FeedScreen() {
     const currentTheme = useContext(ThemeContext);
@@ -13,7 +14,12 @@ export default function FeedScreen() {
             <Card>
                 <Card.Content>
                     <Text variant='titleLarge'>Welcome, {currentUser}</Text>
-                    <FontAwesome5 name='user' size={100} color='gray' />
+                    <LottieView
+                        source={require('../../assets/animation.json')}
+                        autoPlay
+                        loop
+                        style={{ width: 200, height: 200, alignSelf: 'center' }}
+                    />
                     <Card.Actions>
                         <Button mode='contained' onPress={() => { router.push('/feed') }}>Go to Feed</Button>
                     </Card.Actions>
