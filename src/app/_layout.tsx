@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from 'react';
 import { Stack } from 'expo-router';
+import FeedScreen from '.';
 
 export const ThemeContext = createContext('light');
 
@@ -11,7 +12,9 @@ export default function RootLayout() {
     return (
         <ThemeContext.Provider value={theme}>
             <AppContext value={user}>
-                <Stack />
+                <Stack>
+                    <Stack.Screen name='feed' />
+                </Stack>
             </AppContext>
         </ThemeContext.Provider>
     );

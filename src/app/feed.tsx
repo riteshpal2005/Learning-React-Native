@@ -1,27 +1,48 @@
-import { FlatList, Text, View, StyleSheet, TouchableOpacity } from 'react-native';
+import { FlatList, Text, View, StyleSheet, TouchableOpacity, ActivityIndicator } from 'react-native';
+import { useState, useEffect } from 'react';
 
-// const DATA = [
-//     { id: '1', title: 'First Item' },
-//     { id: '2', title: 'Second Item' },
-// ];
-
-const DATA = [
-    { id: '1', task: 'Buy Milk' },
-    { id: '2', task: 'Buy Banana' },
-    { id: '3', task: 'Buy Mango' },
-];
+interface User {
+    id: number,
+    name: string,
+    email: string,
+}
 
 export default function FeedScreen() {
+    const [data, setData] = useState<User[]>([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('https://jsonplaceholder.typicode.com/users');
+                const json = await response.json();
+                setData(json);
+            } catch (error) {
+                console.error(error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+    if (loading) {
+        return <ActivityIndicator
+            size='large'
+            color='#0000ff'
+            style={{ flex: 1 }}
+        />
+    }
+
     return (
         <FlatList
-            data={DATA}
-            keyExtractor={item => item.id}
+            data={data}
+            keyExtractor={item => item.id.toString()}
             renderItem={({ item }) => (
-                <TouchableOpacity onPress={() => console.log('Tapped', item.task)}>
-                    <View style={styles.card}>
-                        <Text>{item.task}</Text>
-                    </View>
-                </TouchableOpacity>
+                <View style={{ padding: 20, borderBottomWidth: 1 }}>
+                    <Text style={{ fontWeight: 'bold' }}>{item.name}</Text>
+                </View>
             )}
         />
     );
