@@ -27,8 +27,11 @@ This repository tracks my journey from zero to building production-ready React N
 - **Topic 1: Basic Routing (Links & useRouter)**
 - **Topic 2: Layouts (Stacks & Tabs)**
 
-### Phase 6: State Management (Context API) (In Progress)
+### Phase 6: State Management (Context API) (Completed)
 - **Topic 1: Global State with Context API**
+
+### Phase 7: Fetching Data & API Integration (In Progress)
+- **Topic 1: Network Requests (Fetch & useEffect)**
 
 ---
 *This file is automatically maintained based on `GEMINI.md` and `LEARNING_LOG.md` progress.*

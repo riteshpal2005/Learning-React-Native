@@ -1,15 +1,15 @@
 import { View, Text, StyleSheet } from 'react-native';
 import { Link, router } from 'expo-router';
+import { useContext } from 'react';
+import { AppContext, ThemeContext } from './_layout';
 
-export default function HomeScreen() {
+export default function FeedScreen() {
+    const currentTheme = useContext(ThemeContext);
+    const currentUser = useContext(AppContext);
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>HomeScreen</Text>
-            {/* Method 1: The Declarative Link component */}
-            <Link style={styles.link} href='/feed'>Go to Feed</Link>
-
-            {/* Method 2: The Imperative router object (good for buttons/functions) */}
-            <Text style={styles.link} onPress={() => router.push('/profile')}>Go to Profle</Text>
+            <Text style={styles.title}>Welcome, {currentUser}</Text>
+            <Text style={styles.title}>The theme is {currentTheme}</Text>
         </View>
     );
 };
@@ -27,5 +27,6 @@ const styles = StyleSheet.create({
     link: {
         fontSize: 18,
         color: 'blue',
-        marginBottom: 10},
+        marginBottom: 10
+    },
 });
